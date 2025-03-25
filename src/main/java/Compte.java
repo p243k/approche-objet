@@ -1,6 +1,6 @@
 public class Compte {
-    int compte;
-    int soldeCompte;
+    private int compte;
+    private int soldeCompte;
 
     public Compte(int compte, int soldeCompte) {
         this.compte = compte;
