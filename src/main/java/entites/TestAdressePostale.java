@@ -2,16 +2,7 @@ package entites;
 
 public class TestAdressePostale {
     public static void main(String[] args) {
-        AdressePostale a = new AdressePostale();
-        AdressePostale b = new AdressePostale();
-        a.codePostal = 59000;
-        a.libelleRue = "Colette";
-        a.numeroRue = 6;
-        a.ville = "Lille";
-
-        b.codePostal = 59000;
-        b.libelleRue = "Bruno";
-        b.numeroRue = 7;
-        b.ville = "Lille";
+        AdressePostale a = new AdressePostale(6, "Colette", 59000, "Lille");
+        AdressePostale b = new AdressePostale(7, "Bruno", 59000, "Lille");
     }
 }
