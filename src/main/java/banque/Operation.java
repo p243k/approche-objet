@@ -9,6 +9,14 @@ public abstract class Operation {
         this.montant = montant;
     }
 
+    @Override
+    public String toString() {
+        return "Operation{" +
+                "date='" + date + '\'' +
+                ", montant=" + montant +
+                '}';
+    }
+
     public String getDate() {
         return date;
     }
