@@ -1,17 +1,27 @@
+package banque;
+
 public class Compte {
-    private int compte;
+    private String compte;
     private int soldeCompte;
 
-    public Compte(int compte, int soldeCompte) {
+    public Compte(String compte, int soldeCompte) {
         this.compte = compte;
         this.soldeCompte = soldeCompte;
     }
 
-    public int getCompte() {
+    @Override
+    public String toString() {
+        return "Compte{" +
+                "compte=" + compte +
+                ", soldeCompte=" + soldeCompte +
+                '}';
+    }
+
+    public String getCompte() {
         return compte;
     }
 
-    public void setCompte(int compte) {
+    public void setCompte(String compte) {
         this.compte = compte;
     }
 
